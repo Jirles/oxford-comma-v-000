@@ -6,6 +6,6 @@ def oxford_comma(array)
   else
     csv = array[0, array.size-1]
     last_item = array.last
-    csv.join(", ") + " and #{last_item}"
+    csv.join(", ") + ", and #{last_item}"
   end
 end
