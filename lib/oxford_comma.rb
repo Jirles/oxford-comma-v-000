@@ -4,7 +4,8 @@ def oxford_comma(array)
   elsif array.size == 2 
     array.join(' and ')
   else
-    csv = array[:-1]
+    csv = array[0, array.size-1]
     last_item = array.last
+    csv.join(", ") + "and #{last_item}"
   end
 end
