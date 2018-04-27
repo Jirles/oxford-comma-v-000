@@ -5,6 +5,6 @@ def oxford_comma(array)
     array.join(' and ')
   else
     csv = array[:-1]
-    last_item = array[-1]
+    last_item = array.last
   end
 end
